@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+      <Home />
+      <Journey />
+      <About />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-
+/* eslint-disable */
+import Home from './pages/Home';
+import Journey from './pages/Journey';
+import About from './pages/About';
+// eslint-disable-line
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Home,
+    Journey,
+    About,
   },
 };
 </script>
 
-<style>
-#app {
+<style scoped>
+body{
+  background-color:#FFF;
+}
+.container {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding: 0px;
+  background-color:#FFF;
+  min-height: 100vh;
+
 }
+.background-name{
+  text-align:center;
+  font-size: 10rem;
+  color:#232324;
+}
+
+
 </style>
